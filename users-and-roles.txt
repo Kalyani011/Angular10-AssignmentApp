@@ -1,0 +1,4 @@
+Amy -- Role A -- User can only see first two links MyLink1 and Mylink2
+Bob -- Role B -- User can see the links MyLink2, Mylink3 and Mylink4
+Cassy -- Role C -- User can see all links but cannot see headline text section
+Admin -- Role Admin -- Can view everything on the page
