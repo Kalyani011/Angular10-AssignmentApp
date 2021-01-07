@@ -8,6 +8,7 @@ import { Router } from "@angular/router";
 export class LoginComponent implements OnInit {
   userName: string = "";
   role: string = "none";
+
   users = [
     {
       name: "Amy",
@@ -30,6 +31,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   goToDashboard() {
     this.role = this.users.find((user) => { return user.name === this.userName })!.role;
     this.router.navigate(['/dashboard', this.role]);

@@ -24,7 +24,7 @@ export class FeedbackFormComponent implements OnInit {
   onSubmit() {
     if (this.feedbackForm.valid) {
       this.isFormSubmitted.emit(true);
-      this.userName.emit(this.feedbackForm.get('FullName').value);
+      this.userName.emit(this.feedbackForm.value.FullName);
     }
   }
 }

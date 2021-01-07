@@ -1,7 +1,7 @@
 <div class="container">
   <h3>We would love to hear from you!</h3>
   <h6>Give Us Your Valuable Feedback Below</h6>
-  <app-feedback-form *ngIf="!isSubmitted; else FeedBackSubmitted" [isSubmitted]="isSubmitted" (isFormSubmitted)="onFormSubmitted($event)" (userName)="onNameSubmitted($event)"></app-feedback-form>
+  <app-feedback-form *ngIf="!isSubmitted; else FeedBackSubmitted" (isFormSubmitted)="onFormSubmitted($event)" (userName)="onNameSubmitted($event)"></app-feedback-form>
   <ng-template #FeedBackSubmitted>
     <h4>Thank You {{userName}} for your feed!</h4>
   </ng-template>
