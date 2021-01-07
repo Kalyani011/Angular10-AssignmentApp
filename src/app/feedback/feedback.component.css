@@ -1,0 +1,12 @@
+.container {
+  background-color: #EFE1E1;
+  padding: 3.5rem 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+h4{
+  margin: 2rem;
+  padding: 1rem;
+  color: #383232;
+}

@@ -1,0 +1,18 @@
+<div *ngIf="showHeadlines; else WithoutHeadlines">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-5">
+        <app-headlines></app-headlines>
+      </div>
+      <div class="col-7">
+        <app-feedback></app-feedback>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #WithoutHeadlines>
+  <div class="container">
+    <app-feedback></app-feedback>
+  </div>
+</ng-template>
